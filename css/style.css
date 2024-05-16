@@ -56,7 +56,7 @@
     margin-bottom:32px;
   }
   /*----Featured Section Start----*/
-.featured_disc{
+/*.featured_disc{
     text-align:center;
     margin-top:24px;
 }
@@ -96,14 +96,47 @@
     text-align: center;
     color: #272727;
     margin-top:32px;
+}*/
+.featuredImgBox{
+    display: flex;
 }
+.featuredImg {
+    width: 33.33%;
+    display: block;
+    margin:40px auto 0 auto;
+  }
+.fImg {
+    max-width: 70% !important;
+    margin: 0 auto;
+    display: block;
+    background: red;
+    height: 440px;
+    padding: 70px 70px 0px 70px;
+    border-radius: 50% 50% 0 0;
+  }
+.fImg1{
+    background:#a7216226;
+  }
+.fImg2{
+    background:#0597A02B;
+}
+.fImg3{
+    background:#477D1138;
+}
+  .flowerName {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 25px 0 0 0;
+    color: #272727;
+    font-weight:600;
+  }
 /*----Feather Section Start----*/
 .feather_container{
     background: #27272718;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 120px;
+    margin-top: 50px;
     overflow:hidden;
 }
 .featherBox {
@@ -126,12 +159,13 @@
     align-items: center;
     overflow: hidden;
   }
+.off {
+    color: #e55473;
+  }
 .deal_column{
-    width:50%;
     text-align: center;
   }
 .deal_column img{
-    display:block;
     margin-left: auto;
 }
 .deal_description{
@@ -199,8 +233,24 @@ footer{
 /*media quaries start*/
 /*mobile device and max width 575px*/
 @media screen and (max-width:575px){
+    .container{
+        overflow:hidden;
+        max-width:100%;
+    }
+    .section_title{
+        font-size:30px;
+    }
+    .section_discription {
+        max-width: 90%;
+        font-size: 17px;
+        text-align: center;
+        display: block;
+        margin: 15px auto;
+      }
+    /*banner section start*/
     .banner{
-        height:825px !important;
+        overflow:hidden;
+        padding:70px 0 0 0;
     }
     .banner_container{
         display:flex;
@@ -210,13 +260,9 @@ footer{
         max-width:100% !important;
     }
     .banner_heading{
-        font-size:40px;
+        font-size:2.8rem;
         text-align:center;
         max-width:90%;
-    }
-    .section_discription{
-        max-width:90%;
-        font-size:17px;
     }
     .btn_primary{
         font-size:18px;
@@ -228,6 +274,56 @@ footer{
         max-width: 70%;
         display: block;
         margin: auto;
+      }
+    /*featured section start*/
+    .featuredImgBox {
+        flex-direction: column;
+      }
+      .featuredImg {
+        width: 80%;
+        margin: 10px auto 10px auto;
+      }
+    .fImg {
+        max-width: 80% !important;
+        padding: 10% 10% 0% 10%;
+      }
+    /*feather section start*/
+    .container.feather_container {
+        flex-direction: column;
+        gap: 45px;
+      }
+    .featherBox{
+        max-width: 80% !important;
+    }
+    /*----deal section start----*/
+    .container.deal_container {
+        flex-direction: column;
+      }
+    .deal_column{
+        max-width: 100% !important;
+      }
+    .deal_column img{
+        max-width: 80%;
+    }
+    .deal_description {
+        width: 80% !important;
+        margin: 0 auto 20px auto;
+        display: block;
+      }
+    /*----instagram section start----*/
+    .instagramImg {
+        width: 80%;
+        margin: 15px auto;
+        display: block;
+      }
+    /*----newslatter section start----*/
+    form{
+        max-width: 100% !important;
+      }
+    form input[type="email"] {
+        width: 90% !important;
+        margin: 0 auto 20px auto;
+        display: block;
       }
 }
 
